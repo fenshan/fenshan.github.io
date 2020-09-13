@@ -37,6 +37,7 @@ body{
 .explorerWindow{
 	display: flex;
 	justify-content: center;
+	-webkit-backface-visibility: hidden;
 	position: fixed;
 	width: 100vw;
 	height: 90vh;
@@ -263,6 +264,7 @@ br {
 .buttonsBar{
 	display: flex;
 	flex-wrap: nowrap;
+	-webkit-backface-visibility: hidden;
 	position: fixed;
 	width: 100vw;
 	height: 10vh;
