@@ -133,6 +133,7 @@ body{
 	margin: auto auto;
 	align-items: center;
 	justify-content:center;
+	border: 3px solid #D8AFD1;
 }
 
 #aboutFen #images{
@@ -162,9 +163,10 @@ body{
 	margin-top: 100%;
 }
 #aboutFen #text{
+	border: 3px solid #D8AFD1;
 	max-width: 700px;
 	text-align: center;
-	padding: 2vw;
+	padding: 2vh 2vw;
 }
 /*END OF ABOUT*/
 
