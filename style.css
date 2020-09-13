@@ -92,6 +92,7 @@ body{
 	flex-wrap: wrap;
 	margin: 5vh;
 	justify-content: center;
+	align-items: center;
 }.game img{
 	width: 500px;
 	margin: auto;
