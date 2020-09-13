@@ -286,16 +286,20 @@ p a{
 	padding: 0px 0.5vw;
 	text-decoration: none;
 }.buttonsBar a:hover{
-	background:rgba(255,255,255,0.12);
-}.buttonsBar a:active{
-	background:rgba(255,255,255,0.2);
+	background:rgba(255,255,255,0.11);
+}.buttonsBar .tabSelected{
+	background:rgba(255,255,255,0.18);
+}.buttonsBar .tabSelected:hover{
+	background:rgba(255,255,255,0.24);
 }
 
 .buttonsBar img{
 	margin: auto 0px;
 	height: 70%;
 	width: auto;
-}.buttonsBar img.home_img{
+}
+/*snail rotate animation*/
+.buttonsBar img.home_img{
 	border-radius: 20%;
 }.buttonsBar img.home_img:hover {	
 	-webkit-animation: rotating 1.3s linear infinite;
