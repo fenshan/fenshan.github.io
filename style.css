@@ -294,6 +294,7 @@ p a{
 .buttonsBar img{
 	margin: auto 0px;
 	height: 70%;
+	width: auto;
 }
 
 .vl{
