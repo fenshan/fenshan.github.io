@@ -352,11 +352,9 @@ br {
 	#aboutFen #images{
 		padding-bottom: 0vh;
 	}
-/*
 	#aboutFen #text{
-	padding-bottom: 7vh;
+		padding-bottom: 6vh;
 	}		
-*/
 }
 
 @media only screen and (max-width: 500px) {
