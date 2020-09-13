@@ -341,9 +341,13 @@ p a{
 		top: 5vh;
 		left: auto;
 	}
+	.game{
+		margin: 0vh;
+		padding: 5vh;
+	}
 	.game img{
 /*		width: 360px;*/
-		width: 110%;
+		width: 100%;
 	}
 	#fenGames, #aboutFen{
 		width: 88vw;
