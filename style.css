@@ -342,8 +342,8 @@ br {
 		left: auto;
 	}
 	.game img{
-/*		width: 380px;*/
-		width: 100%;
+		width: 360px;
+/*		width: 110%;*/
 	}
 	#fenGames, #aboutFen{
 		width: 88vw;
