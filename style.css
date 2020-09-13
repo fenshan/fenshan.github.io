@@ -353,7 +353,14 @@ p a{
 	}
 	#aboutFen #text{
 		padding-bottom: 6vh;
-	}		
+	}
+	.buttonsBar img{
+		height: 65%;
+		width: auto;
+	}
+	.buttonsBar .textButton{
+	font-size: 16px;
+	}
 }
 
 @media only screen and (max-width: 500px) {
