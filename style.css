@@ -1,0 +1,370 @@
+@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	margin: 0px 0px;
+}
+
+#viewport{
+	width: 100vw;
+	height: 100vh;
+	position:relative;
+	min-height: 300px;
+	
+	/*background image*/
+	background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("images/background_pc.jpg");
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;	
+	
+/*	border*/
+	box-sizing: border-box;
+	border: 5px solid #D8AFD1;	
+}
+
+#homeTitle{
+	position: absolute;
+	text-align: center;
+	left: 10vw;
+  	top: 10vh;
+	color: #E9E9E9;
+	text-shadow: 6px 6px 8px #000;
+}
+
+/*EXPLORER WINDOW*/
+.explorerWindow{
+	display: flex;
+	justify-content: center;
+	position: fixed;
+	width: 100vw;
+	height: 90vh;
+/*	border*/
+	box-sizing: border-box;
+	border: 5px solid #D8AFD1;
+	border-bottom: none;
+/*	background color*/
+	background: linear-gradient(rgba(255, 106, 213, 0.4), rgba(9, 252, 186, 0.4)), rgba(0,0,0,1.00);
+}
+.closeButton{
+/*
+	position: absolute;
+	width: 3vh;
+	height: 3vh;
+	right: 1vw;
+	top: 0.5vh;
+	
+	box-sizing: border-box;
+	border: 3px solid #D8AFD1;
+	border-radius: 10%;
+*/
+}
+.explorerViewportParent{
+	position: absolute;
+	width: 97.5vw;
+	height: 83vh;
+	margin: 0px auto;
+	bottom: 0.5vw;
+	
+/*	background:#C486B9;*/
+	background: linear-gradient(rgba(255,173,231,1.00), rgba(153,253,226,1.00)), rgba(0,0,0,1.00);
+	border: 5px solid #D8AFD1;
+}
+.explorerViewport{
+	display: flex;
+	position: relative;
+	overflow-y: scroll;
+	width: 100%;
+	height: 100%;
+	align-items: center;
+}
+/*END OF EXPLORER WINDOW*/
+
+/*FEN GAMES*/
+#fenGames{
+	width: 75vw;
+	margin: auto auto;
+}
+.game{
+	display:flex;
+	flex-wrap: wrap;
+	margin: 5vh;
+	justify-content: center;
+}.game img{
+	width: 500px;
+	margin: auto;
+	border-radius: 30px;	
+	border: 3px solid #D8AFD1;	
+}
+.game .gameDescription{
+	display: flex;
+	flex-direction:column;
+	justify-content: center;
+	max-width: 600px;
+	padding: 20px;
+}
+.gameDescription div{
+	margin: 20px;
+}
+.game h1 a{
+	text-decoration: none;
+	font-weight: normal;
+	color: #C400A2;	
+}.game h1 a:hover{
+	color: #FF69E3;
+}
+.game p{
+	margin: 10px;
+}.game p.role{
+	font-size: 17px;
+}.game p.date{
+	font-size: 17px;
+	text-align: right;
+}
+
+/*END OF FEN GAMES*/
+
+/*ABOUT*/
+#aboutFen{
+	display: flex;
+	width: 75vw;
+	flex-wrap: wrap;
+	margin: auto auto;
+	align-items: center;
+	justify-content:center;
+}
+
+#aboutFen #images{
+	flex-basis: 34%;
+	min-width: 350px;
+	min-height: 350px;
+	display: grid;
+    position: relative;
+	grid-template-columns: repeat(2, 40%);
+	padding: 1vw;
+}
+#aboutFen #images img{
+	width: 15vw;
+	min-width: 200px;
+	border-radius: 5%;
+	border: 3px solid #D8AFD1;
+}
+#aboutFen #images #fen1{
+	grid-column: 1;
+	grid-row: 1;
+	z-index: 1;
+}
+#aboutFen #images #fen2{
+/*	shouldn't it be grid-row 2 as well??*/
+	grid-column: 2;
+	grid-row: 1;
+	margin-top: 100%;
+}
+#aboutFen #text{
+	max-width: 700px;
+	text-align: center;
+	padding: 2vw;
+}
+/*END OF ABOUT*/
+
+h1{
+	font-family: 'Grenze Gotisch', cursive;
+	font-weight: normal;
+	margin: 0px;
+}
+
+h2{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	letter-spacing: 2px;
+	margin: 0px;
+}
+
+p{
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+	margin: 40px;
+}
+
+p a{
+	padding: 10px;
+	text-decoration: none;
+	font-weight: 800;
+	color: #C400A2;
+	
+}p a:hover{
+/*	text-decoration: underline;*/
+	color: #FF69E3;
+}
+
+br {
+   display: block;
+   margin: 7px 0;
+}
+
+
+/*SOCIAL MEDIA*/
+#socialMedia{
+	position:absolute;
+	right: 10vw;
+	top: 10vh;
+	display:flex;
+	flex-wrap: wrap;
+	justify-content: center;
+
+	/*depends on the screen ratio*/
+	max-width: 110px;
+}
+
+#socialMedia a{
+	max-height: 110px;
+	height: 110px;
+	width: 110px;
+	margin: 1.5vh auto;
+	padding: 0.5vh;
+	position: relative;
+	text-align: center;
+	text-decoration: none;
+/*	border*/
+	border: 2px solid rgba(0,0,0,0.00);
+	border-radius: 10%;
+	box-sizing: border-box;
+	
+}#socialMedia a:hover{
+	background:rgba(229,201,224,0.2);
+	border: 2px solid rgba(216,175,209,0.5);
+}#socialMedia a:active{
+	background:rgba(229,201,224,0.5);
+	border: 2px solid rgba(216,175,209,1);
+}
+
+#socialMedia i{
+	margin: auto;
+	font-size: 70px;	
+/*	font-size: 3.5vw;	*/
+	
+/*	text style*/
+	color: #E9E9E9;
+	text-shadow: 4px 4px 5px #000;
+}
+
+#socialMedia p{
+	margin: 3px auto;
+	color: #E9E9E9;
+	text-shadow: 4px 4px 5px #000;
+}
+
+/*END OF SOCIAL MEDIA*/
+
+
+/*UI BAR*/
+.buttonsBar{
+	display: flex;
+	flex-wrap: nowrap;
+	position: fixed;
+	width: 100vw;
+	height: 10vh;
+	min-height: 60px;
+	left:0;
+	bottom:0;
+	justify-content: left;
+	
+/*	style*/
+	background: #170B15;
+	box-sizing: border-box;
+	border: 5px solid #D8AFD1;	
+}
+
+.buttonsBar a{
+	display: flex;
+	flex-wrap: nowrap;
+	justify-content:space-around;
+	align-content: center;
+	padding: 0px 0.5vw;
+	text-decoration: none;
+}.buttonsBar a:hover{
+	background:rgba(255,255,255,0.12);
+}.buttonsBar a:active{
+	background:rgba(255,255,255,0.2);
+}
+
+.buttonsBar img{
+	margin: auto 0px;
+	height: 70%;
+}
+
+.vl{
+	box-sizing: border-box;
+	border-left: 2px solid #D8AFD1;	
+	height: 70%;
+	margin: auto 0px;
+}
+
+.buttonsBar .textButton{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	vertical-align: center;
+	margin: 0px;
+	padding: 1vw;
+	
+/*	style*/
+	text-align: center;
+	color: #C4C4C4;
+	font-family: 'Source Code Pro', monospace;
+	font-size: 20px;
+}
+/*END OF UI BAR*/
+
+/* For mobile phones: */
+@media only screen and (max-width: 768px) {
+/*	vertical background*/
+	#viewport{
+		background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.3)), url("images/background_phone.jpg");
+	}
+/*	phone distribution of apps*/
+	#socialMedia{
+		position: absolute;
+/*		margin: auto;*/
+		left: 5vw;
+		bottom: 15vh;
+		top: auto;
+		max-width: 250px;
+		max-height: 250px;
+	}
+	#homeTitle{
+		position: relative;
+		top: 5vh;
+		left: auto;
+	}
+	.game img{
+	width: 400px;
+	}
+	#fenGames, #aboutFen{
+	width: 90vw;
+	}
+		
+}
+
+
+
+/*
+#socialMedia .fa-twitter{
+	color: #1da1f2;
+}#socialMedia .fa-itch-io{
+	color: #fa5c5c;	
+}#socialMedia .fa-github{
+	color: black;
+}#socialMedia .fa-linkedin{
+	color: #2867b2;	
+}
+*/
+
+
+
+
+
+
+
+
