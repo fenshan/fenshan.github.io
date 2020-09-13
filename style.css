@@ -295,8 +295,15 @@ p a{
 	margin: auto 0px;
 	height: 70%;
 	width: auto;
+}.buttonsBar img.home_img{
+	border-radius: 20%;
+}.buttonsBar img.home_img:hover {	
+	-webkit-animation: rotating 1.3s linear infinite;
+	-moz-animation: rotating 1.3s linear infinite;
+	-ms-animation: rotating 1.3s linear infinite;
+	-o-animation: rotating 1.3s linear infinite;
+	animation: rotating 1.3s linear infinite;
 }
-
 .vl{
 	box-sizing: border-box;
 	border-right: 2px solid #D8AFD1;	
@@ -374,7 +381,34 @@ p a{
 	}	
 }
 
-
+@-webkit-keyframes rotating /* Safari and Chrome */ {
+  from {
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotating {
+  from {
+    -ms-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -ms-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    -webkit-transform: rotate(360deg);
+    -o-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+}
 
 
 /*
