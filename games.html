@@ -23,12 +23,13 @@
 		<div class="explorerViewport">
 		<div id="fenGames">
 			
-			<article class="game">
+			<article class="game" 
+					 onMouseOver="setJpgGif(this, 'images/games/lovingly_evil.gif')" 
+					 onMouseLeave="setJpgGif(this, 'images/games/lovingly_evil.jpg')">
 				<div class="gameImage">
 				<img src="images/games/lovingly_evil.jpg"
-					 onMouseOver="this.src='images/games/lovingly_evil.gif';"
-					 onMouseOut="this.src='images/games/lovingly_evil.jpg';"
-					 alt="Lovingly Evil gameplay gif">
+					 alt="Lovingly Evil gameplay gif"
+					 class="jpg_gif">
 				</div>
 				<div class="gameDescription">
 					<div>
@@ -40,12 +41,13 @@
 				</div>
 			</article>
 			
-			<article class="game">
+			<article class="game"
+					 onMouseOver="setJpgGif(this, 'images/games/breik.gif')" 
+					 onMouseLeave="setJpgGif(this, 'images/games/breik.jpg')">
 				<div class="gameImage">
 				<img src="images/games/breik.jpg"
-					 onMouseOver="this.src='images/games/breik.gif';"
-					 onMouseOut="this.src='images/games/breik.jpg';"
-					 alt="Breik gameplay gif">
+					 alt="Breik gameplay gif"
+					 class="jpg_gif">
 				</div>
 				<div class="gameDescription">
 					<div>
@@ -57,12 +59,13 @@
 				</div>
 			</article>
 			
-			<article class="game">
+			<article class="game"
+					 onMouseOver="setJpgGif(this, 'images/games/chill_thrive.gif')" 
+					 onMouseLeave="setJpgGif(this, 'images/games/chill_thrive.jpg')">
 				<div class="gameImage">
 				<img src="images/games/chill_thrive.jpg"
-					 onMouseOver="this.src='images/games/chill_thrive.gif';"
-					 onMouseOut="this.src='images/games/chill_thrive.jpg';"
-					 alt="Chill Thrive gameplay gif">
+					 alt="Chill Thrive gameplay gif"
+					 class="jpg_gif">
 				</div>
 				<div class="gameDescription">
 					<div>
@@ -77,6 +80,15 @@
 		</div>
 	</div>	
 </div>
+	
+<script>
+function setJpgGif(parentTag, jpg_gif) {
+	img = parentTag.getElementsByClassName("jpg_gif")[0];
+	if (img.src.indexOf(jpg_gif) == -1){
+		img.src = jpg_gif;
+	}	
+}
+</script>
 
 <!--	END OF EXPLORER WINDOW-->
 	
