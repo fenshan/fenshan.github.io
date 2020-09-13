@@ -143,8 +143,7 @@ body{
 	display: grid;
     position: relative;
 	grid-template-columns: repeat(2, 40%);
-	padding: 1vh 1vw;
-	padding-top: 5vh;
+	padding: 5vh 1vw;
 }
 #aboutFen #images img{
 	width: 15vw;
@@ -166,7 +165,7 @@ body{
 #aboutFen #text{
 	max-width: 700px;
 	text-align: center;
-	padding: 2vh 2vw;
+/*	padding: 2vh 2vw;*/
 }
 /*END OF ABOUT*/
 
@@ -202,7 +201,7 @@ p a{
 
 br {
    display: block;
-   margin: 7px 0;
+   margin: 10px 0;
 }
 
 
@@ -341,10 +340,13 @@ br {
 		left: auto;
 	}
 	.game img{
-	width: 400px;
+		width: 400px;
 	}
 	#fenGames, #aboutFen{
-	width: 88vw;
+		width: 88vw;
+	}
+	#aboutFen #images{
+		padding-bottom: 0vh;
 	}
 /*
 	#aboutFen #text{
