@@ -130,7 +130,7 @@ body{
 /*ABOUT*/
 #aboutFen{
 	display: flex;
-	width: 75vw;
+	width: 80vw;
 	flex-wrap: wrap;
 	margin: auto auto;
 	align-items: center;
@@ -165,7 +165,7 @@ body{
 	margin-top: 100%;
 }
 #aboutFen #text{
-	max-width: 700px;
+	max-width: 730px;
 	text-align: center;
 /*	padding: 2vh 2vw;*/
 }
