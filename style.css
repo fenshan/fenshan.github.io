@@ -142,14 +142,16 @@ body{
 	flex-basis: 34%;
 	min-width: 350px;
 	min-height: 350px;
+	margin: auto 2vw;
 	display: grid;
-    position: relative;
+    	position: relative;
 	grid-template-columns: repeat(2, 40%);
 	padding: 5vh 1vw;
 }
 #aboutFen #images img{
 	width: 15vw;
 	min-width: 200px;
+	max-width: 300px;
 	border-radius: 5%;
 	border: 3px solid #D8AFD1;
 }
